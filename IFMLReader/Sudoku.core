@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:IFMLModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://www.omg.org/spec/20130218/core" xmlns:ext="http://www.omg.org/spec/20130218/ext" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" id="_M4SCUKRxEeWm1breruknsg">
+  <interactionFlowModel id="_cdRaMKRxEeWm1breruknsg">
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="layout.main" name="SudokuHome" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.1/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.2/@viewElements.1/@viewElementEvents.0/@outInteractionFlows.0 //@interactionFlowModel/@interactionFlowModelElements.3/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.0" isDefault="true">
+      <viewElements xsi:type="core:ViewComponent" id="id.continue_button" name="Continue"/>
+      <viewElements xsi:type="core:ViewComponent" id="id.new_button" name="New Game"/>
+      <viewElements xsi:type="core:ViewComponent" id="id.about_button" name="About">
+        <viewElementEvents id="1" name="click">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_Vb34YKSPEeWhU4kIlKfFYQ"/>
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_jCL4wKYeEeWAB_a0lcAc8A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.1"/>
+        </viewElementEvents>
+      </viewElements>
+      <viewElements xsi:type="core:ViewComponent" id="id.exit_button" name="Exit"/>
+      <viewElements xsi:type="core:ViewComponent" id="MENU" name="Menu">
+        <parameters id="_AnmuQKe7EeWO6JizO643Lg" name="homeStr">
+          <type xsi:type="uml:PrimitiveType" href="sudoku.uml#_VK2hkJ6QEeGdnpRmAZh-dQ"/>
+        </parameters>
+        <viewElementEvents id="2" name="click">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_o8_DQKYeEeWAB_a0lcAc8A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.2">
+            <parameterBindingGroup id="_NEa0QKe7EeWO6JizO643Lg">
+              <parameterBindings id="_Ou2VwKe7EeWO6JizO643Lg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.2/@viewElements.0/@parameters.0"/>
+              <parameterBindings id="_aVG5QKiiEeWnMuPrkY-TMg" sourceParameter="//@interactionFlowModel/@interactionFlowModelElements.2/@viewElements.0/@parameters.0" targetParameter="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@parameters.0"/>
+            </parameterBindingGroup>
+          </outInteractionFlows>
+        </viewElementEvents>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="layout.about" name="AboutDialog" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.2/@viewElementEvents.0/@outInteractionFlows.1">
+      <viewElements xsi:type="core:ViewComponent" id="id.about_content" name="AboutContent"/>
+      <viewElements xsi:type="core:ViewComponent" id="EXIT" name="Exit">
+        <viewElementEvents id="3" name="click">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_dvqTgKSPEeWhU4kIlKfFYQ" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </viewElementEvents>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="ext:IFMLMenu" id="_53QBcKYdEeWAB_a0lcAc8A" name="Menu" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.0/@viewElements.4/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewComponent" id="_XDPagKYeEeWAB_a0lcAc8A" name="Settings">
+        <parameters id="_G5GhgKe7EeWO6JizO643Lg" name="menuStr">
+          <type xsi:type="uml:Class" href="sudoku.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
+        </parameters>
+        <viewElementEvents id="5" name="click">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_9HfNsKYeEeWAB_a0lcAc8A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.3"/>
+        </viewElementEvents>
+      </viewElements>
+      <viewElements xsi:type="core:ViewComponent" id="_ckO94KYeEeWAB_a0lcAc8A" name="Exit">
+        <viewElementEvents id="4" name="click">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_tDN40KYeEeWAB_a0lcAc8A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </viewElementEvents>
+      </viewElements>
+    </interactionFlowModelElements>
+    <interactionFlowModelElements xsi:type="core:ViewContainer" id="_UpgjAKYeEeWAB_a0lcAc8A" name="Prefs" inInteractionFlows="//@interactionFlowModel/@interactionFlowModelElements.2/@viewElements.0/@viewElementEvents.0/@outInteractionFlows.0">
+      <viewElements xsi:type="core:ViewComponent" id="_2Z6icKYeEeWAB_a0lcAc8A" name="Music">
+        <viewElementEvents id="7" name="click"/>
+      </viewElements>
+      <viewElements xsi:type="core:ViewComponent" id="_3SFgkKYeEeWAB_a0lcAc8A" name="Hints">
+        <viewElementEvents id="8" name="click"/>
+      </viewElements>
+      <viewElements xsi:type="core:ViewComponent" id="__qZPUKYeEeWAB_a0lcAc8A" name="Exit">
+        <viewElementEvents id="6" name="click">
+          <outInteractionFlows xsi:type="core:NavigationFlow" id="_QI96kKYfEeWAB_a0lcAc8A" targetInteractionFlowElement="//@interactionFlowModel/@interactionFlowModelElements.0"/>
+        </viewElementEvents>
+      </viewElements>
+    </interactionFlowModelElements>
+  </interactionFlowModel>
+  <domainModel id="_M4SCUaRxEeWm1breruknsg">
+    <domainElements xsi:type="core:UMLDomainConcept" id="_M4SCUqRxEeWm1breruknsg" name="Movie">
+      <classifier xsi:type="uml:Class" href="sudoku.uml#__W1boJ6PEeGdnpRmAZh-dQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_M4qc0KRxEeWm1breruknsg" name="title">
+      <structuralFeature xsi:type="uml:Property" href="sudoku.uml#_jEpi8J6QEeGdnpRmAZh-dQ"/>
+    </domainElements>
+    <domainElements xsi:type="core:UMLStructuralFeature" id="_M4qc0aRxEeWm1breruknsg" name="year">
+      <structuralFeature xsi:type="uml:Property" href="sudoku.uml#_jm9l0J6QEeGdnpRmAZh-dQ"/>
+    </domainElements>
+  </domainModel>
+</core:IFMLModel>

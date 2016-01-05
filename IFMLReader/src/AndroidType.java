@@ -1,0 +1,4 @@
+
+public enum AndroidType {
+	NULL,LAYOUT,BUTTON,TEXTFIELD,EXIT,MENU
+}
